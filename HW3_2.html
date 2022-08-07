@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+        <from>
+            <h2>แบบฟอร์มจองทัวร์</h2>
+            <fieldset>
+                <legend>ข้อมูลทั่วไป</legend>
+                <label for="ชื่อนามสกุล">ชื่อ-สกุล:</label><br>
+                <input type="text" placeholder="กรอกชื่อ-สกุล" required><br><br>
+                <label for="email">Email :</label><br>
+                <input type="email" required><br><br>
+                <label for="โทรศัพท์">ชื่อ-สกุล:</label><br>
+                <input type="tel" value="+66" required><br><br>
+                <label for="ที่อยู่">ชื่อ-สกุล:</label><br>
+                <textarea cols="30" rows="3"></textarea> <br>
+                <label for="รหัสไปรษณีย์ : ">รหัสไปรษณีย์ : </label>
+                <input type="text" maxlength="5" pattern="[0-9]" size="4"><br>
+                <label for="รูปผู้จอง">รูปผู้จอง : </label>
+                <input type="file">
+            </fieldset><br>
+            <fieldset>
+                <legend>ข้อมูลเข้าสู่ระบบ</legend>
+                <label for="Username">Username:</label><br>
+                <input type="text" pattern="\W{8+}" required><br><br>
+                <i>ประกอบด้วยตัวเลข ตัวอักษร หรือ _ ตั้งแต่ 8 ตัวขึ้นไป</i><br><br>
+                <label for="Password">Password:</label><br>
+                <input type="password" pattern="\s{8+}" required><br><br>
+                <i>ประกอบด้วยัอกขระอะไรก็ได้ 8 ตัวขึ้นไป</i><br>
+            </fieldset>
+            <fieldset><legend>ข้อมูลทัวร์ที่ต้องการ</legend>
+                <label>แพคเก็จทัวร์ :
+                    <select>
+                    <option value="select" selected="selected">--select--  </option>
+                    <option value="จีน">จีน</option>
+                    <option value="เกาหลี">เกาหลี</option>
+                    <option value="ญี่ปุ่น">ญี่ปุ่น</option>
+                    <option value="เวียดนาม">เวียดนาม</option>
+                    <option value="พม่า">พม่า</option>
+                    </select>
+                </label><br>
+                <label for="วันที่เดินทาง : ">วันที่เดินทาง : </label><br>
+                <input type="date" ><br>
+                <label for="จำนวนผู้เดินทาง : ">จำนวนผู้เดินทาง :</label><br>
+                <input type="number" min="1" max="10"><br>
+                <label for="เน้นการท่องเที่ยวแบบใด?">เน้นการท่องเที่ยวแบบใด?</label><br>
+                <br>
+                <input type="checkbox">ชอปปิ้ง<br>
+                <input type="checkbox">ธรรมชาติ<br>
+                <input type="checkbox">ทะเล<br>
+            </fieldset><br>
+            <label for="ยอมรับเงื่อนไขและข้อตกลง">ยอมรับเงื่อนไขและข้อตกลง</label>
+            <input type="radio" name="1" checked>I agree
+            <input type="radio" name="1">I disagree 
+            <input type="button" value="จอง">
+        </from>
+    </fieldset>
+</body>
+</html>
